@@ -13,3 +13,9 @@ two:
   ends_at: 2011-06-14 23:59:59
   all_day: true
   description: My wedding anniversary
+
+three:
+  title: Aniversary
+  starts_at: 2013-04-20 15:00:00
+  ends_at: 2013-04-22 15:59:59
+  all_day: false

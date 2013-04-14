@@ -55,4 +55,9 @@ class EventsControllerTest < ActionController::TestCase
 
     assert_redirected_to events_path
   end
+  
+  test "should get event" do
+    get :index, { :start => DateTime.strptime("2013-04-14 00:00:00", "%Y-%m-%d %H:%M:%S").to_time.to_i, :end => DateTime.strptime("2013-04-21 00:00:00", "%Y-%m-%d %H:%M:%S").to_time.to_i}
+    assert assigns['events'].count > 0
+  end
 end
